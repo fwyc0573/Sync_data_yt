@@ -1,0 +1,71 @@
+operator,time_us
+DistributedDataParallel.forward,959
+aten::flatten_dense_tensors,267
+aten::view,484
+aten::cat,11
+c10d::broadcast_,6
+record_param_comms,687
+aten::unflatten_dense_tensors,626
+aten::narrow,506
+aten::slice,427
+aten::as_strided,369
+aten::copy_,1717
+aten::conv2d,149
+aten::convolution,158
+aten::_convolution,153
+aten::cudnn_convolution,41024
+aten::add_,21295
+aten::batch_norm,142
+aten::_batch_norm_impl_index,144
+aten::cudnn_batch_norm,22167
+aten::empty_like,135
+aten::empty,713
+aten::relu_,135
+aten::clamp_min_,11757
+aten::max_pool2d,3
+aten::max_pool2d_with_indices,857
+aten::adaptive_avg_pool2d,3
+aten::mean,102
+aten::flatten,3
+aten::linear,5
+aten::t,10
+aten::transpose,15
+aten::addmm,58
+aten::is_same_size,1
+autograd::engine::evaluate_function: AddmmBackward0,7
+AddmmBackward0,10
+aten::mm,78
+aten::sum,8
+autograd::engine::evaluate_function: torch::autograd::AccumulateGrad,901
+torch::autograd::AccumulateGrad,539
+torch::distributed::reducer::mul_out,520
+aten::mul,730
+autograd::engine::evaluate_function: TBackward0,3
+TBackward0,3
+c10d::allreduce_,16
+autograd::engine::evaluate_function: ViewBackward0,3
+ViewBackward0,2
+aten::reshape,3
+autograd::engine::evaluate_function: MeanBackward1,3
+MeanBackward1,7
+aten::expand,3
+aten::div,67
+autograd::engine::evaluate_function: ReluBackward0,212
+ReluBackward0,218
+aten::threshold_backward,17616
+autograd::engine::evaluate_function: AddBackward0,77
+AddBackward0,29
+autograd::engine::evaluate_function: CudnnBatchNormBackward0,254
+CudnnBatchNormBackward0,258
+aten::cudnn_batch_norm_backward,37845
+autograd::engine::evaluate_function: ConvolutionBackward0,220
+ConvolutionBackward0,168
+aten::convolution_backward,93871
+aten::to,56
+autograd::engine::evaluate_function: MaxPool2DWithIndicesBackward0,3
+MaxPool2DWithIndicesBackward0,3
+aten::max_pool2d_with_indices_backward,2135
+aten::zero_,2
+aten::fill_,475
+torch.distributed.ddp.reducer::copy_bucket_to_grad,506
+whole_step_time,261.939 ms
