@@ -1,0 +1,78 @@
+operator,time_us
+DistributedDataParallel.forward,4678
+aten::flatten_dense_tensors,1539
+aten::view,2607
+aten::cat,3745
+c10d::broadcast_,38
+record_param_comms,15791
+aten::unflatten_dense_tensors,1972
+aten::narrow,6877
+aten::slice,7663
+aten::as_strided,3328
+aten::copy_,5779
+aten::conv2d,410
+aten::convolution,456
+aten::_convolution,422
+aten::cudnn_convolution,9614
+aten::add_,12298
+aten::batch_norm,398
+aten::_batch_norm_impl_index,429
+aten::cudnn_batch_norm,9077
+aten::empty_like,442
+aten::empty,4086
+aten::relu_,545
+aten::clamp_min_,4851
+aten::max_pool2d,2
+aten::max_pool2d_with_indices,215
+aten::avg_pool2d,184
+aten::adaptive_avg_pool2d,6
+aten::mean,40
+aten::flatten,5
+aten::linear,12
+aten::t,74
+aten::transpose,65
+aten::addmm,70
+aten::is_same_size,9
+autograd::engine::evaluate_function: AddmmBackward0,60
+AddmmBackward0,65
+aten::mm,124
+aten::sum,48
+autograd::engine::evaluate_function: torch::autograd::AccumulateGrad,5955
+torch::autograd::AccumulateGrad,2778
+torch::distributed::reducer::mul_out,2599
+aten::mul,3925
+autograd::engine::evaluate_function: TBackward0,19
+TBackward0,14
+c10d::allreduce_,70
+autograd::engine::evaluate_function: ViewBackward0,19
+ViewBackward0,15
+aten::reshape,13
+autograd::engine::evaluate_function: MeanBackward1,26
+MeanBackward1,44
+aten::expand,19
+aten::div,44
+autograd::engine::evaluate_function: ReluBackward0,1112
+ReluBackward0,927
+aten::threshold_backward,8437
+autograd::engine::evaluate_function: CudnnBatchNormBackward0,1096
+CudnnBatchNormBackward0,798
+aten::cudnn_batch_norm_backward,16665
+autograd::engine::evaluate_function: CatBackward0,4067
+CatBackward0,3388
+autograd::engine::evaluate_function: ConvolutionBackward0,926
+ConvolutionBackward0,872
+aten::convolution_backward,33471
+aten::to,444
+aten::contiguous,54
+aten::clone,94
+aten::add,1401
+autograd::engine::evaluate_function: AvgPool2DBackward0,17
+AvgPool2DBackward0,20
+aten::avg_pool2d_backward,649
+autograd::engine::evaluate_function: MaxPool2DWithIndicesBackward0,3
+MaxPool2DWithIndicesBackward0,4
+aten::max_pool2d_with_indices_backward,553
+aten::zero_,4
+aten::fill_,123
+torch.distributed.ddp.reducer::copy_bucket_to_grad,1874
+whole_step_time,190.563 ms

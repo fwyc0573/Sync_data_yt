@@ -1,0 +1,64 @@
+operator,time_us
+DistributedDataParallel.forward,88
+aten::conv2d,45
+aten::convolution,47
+aten::_convolution,105
+aten::cudnn_convolution,38540
+aten::reshape,104
+aten::view,194
+aten::add_,8733
+aten::relu_,50
+aten::clamp_min_,4607
+aten::max_pool2d,14
+aten::max_pool2d_with_indices,1712
+aten::adaptive_avg_pool2d,3
+aten::_adaptive_avg_pool2d,84
+aten::empty,512
+aten::resize_,1
+aten::flatten,3
+aten::linear,15
+aten::t,428
+aten::transpose,443
+aten::as_strided,1149
+aten::addmm,695
+aten::dropout,6
+aten::native_dropout,23
+aten::empty_like,140
+aten::empty_strided,5
+aten::is_same_size,1
+autograd::engine::evaluate_function: AddmmBackward0,332
+AddmmBackward0,318
+aten::mm,1769
+aten::sum,4447
+autograd::engine::evaluate_function: torch::autograd::AccumulateGrad,3029
+torch::autograd::AccumulateGrad,2130
+torch::distributed::reducer::mul_out,1941
+aten::mul,3359
+autograd::engine::evaluate_function: TBackward0,103
+TBackward0,86
+c10d::allreduce_,251
+record_param_comms,255
+autograd::engine::evaluate_function: NativeDropoutBackward0,32
+NativeDropoutBackward0,31
+aten::native_dropout_backward,66
+autograd::engine::evaluate_function: ReluBackward0,1043
+ReluBackward0,1210
+aten::threshold_backward,7957
+autograd::engine::evaluate_function: ViewBackward0,63
+ViewBackward0,56
+autograd::engine::evaluate_function: AdaptiveAvgPool2DBackward0,77
+AdaptiveAvgPool2DBackward0,75
+aten::_adaptive_avg_pool2d_backward,195
+aten::zeros_like,140
+aten::zero_,333
+aten::fill_,1252
+autograd::engine::evaluate_function: MaxPool2DWithIndicesBackward0,273
+MaxPool2DWithIndicesBackward0,295
+aten::max_pool2d_with_indices_backward,4299
+autograd::engine::evaluate_function: ConvolutionBackward0,848
+ConvolutionBackward0,822
+aten::convolution_backward,99148
+aten::to,393
+torch.distributed.ddp.reducer::copy_bucket_to_grad,891
+aten::copy_,2717
+whole_step_time,197.983 ms
